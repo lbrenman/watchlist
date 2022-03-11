@@ -19,7 +19,7 @@
     "application/json"
   ],
   "paths": {
-    "/api/watchlist": {
+    "/watchlist": {
       "get": {
         "summary": "Your GET endpoint",
         "responses": {
@@ -108,6 +108,18 @@
   "tags": [
     {
       "name": "Watch List"
+    }
+  ],
+  "securityDefinitions": {
+    "API Key - 1": {
+      "name": "apikey",
+      "type": "apiKey",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "API Key - 1": []
     }
   ]
 }
