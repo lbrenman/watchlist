@@ -27,14 +27,62 @@
             "description": "OK",
             "schema": {
               "type": "array",
+              "description": "",
+              "minItems": 1,
+              "uniqueItems": true,
+              "x-examples": {
+                "example-1": [
+                  {
+                    "symbol": "AAPL",
+                    "regularMarketPrice": "156.475",
+                    "regularMarketChange": "-2.0449982"
+                  },
+                  {
+                    "symbol": "AAPL",
+                    "regularMarketPrice": "156.475",
+                    "regularMarketChange": "-2.0449982"
+                  }
+                ]
+              },
               "items": {
                 "type": "object",
                 "properties": {
                   "symbol": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "regularMarketPrice": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "regularMarketChange": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "": {
                     "type": "string"
                   }
-                }
+                },
+                "required": [
+                  "symbol",
+                  "regularMarketPrice",
+                  "regularMarketChange"
+                ]
               }
+            },
+            "examples": {
+              "example-1": [
+                {
+                  "symbol": "AAPL",
+                  "regularMarketPrice": "156.475",
+                  "regularMarketChange": "-2.0449982"
+                },
+                {
+                  "symbol": "AAPL",
+                  "regularMarketPrice": "156.475",
+                  "regularMarketChange": "-2.0449982"
+                }
+              ]
             }
           }
         },
@@ -44,8 +92,8 @@
           {
             "type": "array",
             "items": {
-              "type":"string"
-              },
+              "type": "string"
+            },
             "in": "query",
             "name": "stocklist",
             "description": "Array of stock symbols"
