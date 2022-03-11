@@ -1,0 +1,57 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "watchlist",
+    "version": "1.0",
+    "contact": {
+      "name": "Leor Brenman"
+    },
+    "description": "Stock Watch List"
+  },
+  "host": "localhost:3000",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/api/watchlist": {
+      "get": {
+        "summary": "Your GET endpoint",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {}
+            }
+          }
+        },
+        "operationId": "get-watchlist",
+        "description": "Stock watchlist",
+        "parameters": [
+          {
+            "type": "array",
+            "in": "query",
+            "name": "stocklist",
+            "description": "Array of stock symbols"
+          }
+        ],
+        "tags": [
+          "Watch List"
+        ]
+      },
+      "parameters": []
+    }
+  },
+  "definitions": {},
+  "tags": [
+    {
+      "name": "Watch List"
+    }
+  ]
+}
