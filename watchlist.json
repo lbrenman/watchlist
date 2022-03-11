@@ -8,7 +8,7 @@
     },
     "description": "Stock Watch List"
   },
-  "host": "localhost:3000",
+  "host": "localhost:8080",
   "schemes": [
     "http"
   ],
