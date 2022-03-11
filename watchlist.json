@@ -27,7 +27,9 @@
             "description": "OK",
             "schema": {
               "type": "array",
-              "items": {}
+              "items": {
+                "type": "string"
+              }
             }
           }
         },
