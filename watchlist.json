@@ -52,12 +52,10 @@
                     "minLength": 1
                   },
                   "regularMarketPrice": {
-                    "type": "string",
-                    "minLength": 1
+                    "type": "number"
                   },
                   "regularMarketChange": {
-                    "type": "string",
-                    "minLength": 1
+                    "type": "number"
                   },
                   "": {
                     "type": "string"
@@ -74,13 +72,13 @@
               "example-1": [
                 {
                   "symbol": "AAPL",
-                  "regularMarketPrice": "156.475",
-                  "regularMarketChange": "-2.0449982"
+                  "regularMarketPrice": 154.73,
+                  "regularMarketChange": -3.7900085
                 },
                 {
-                  "symbol": "AAPL",
-                  "regularMarketPrice": "156.475",
-                  "regularMarketChange": "-2.0449982"
+                  "symbol": "TXN",
+                  "regularMarketPrice": 170.36,
+                  "regularMarketChange": -2.3899994
                 }
               ]
             }
