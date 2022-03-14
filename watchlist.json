@@ -79,6 +79,12 @@
                 }
               ]
             }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
           }
         },
         "operationId": "get-watchlist",
