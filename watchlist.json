@@ -28,7 +28,7 @@
             "schema": {
               "type": "array",
               "description": "",
-              "minItems": 1,
+              "minItems": 0,
               "uniqueItems": true,
               "x-examples": {
                 "example-1": [
