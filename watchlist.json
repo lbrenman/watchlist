@@ -51,19 +51,16 @@
                     "type": "string",
                     "minLength": 1
                   },
-                  "regularMarketPrice": {
+                  "regularMarkletPrice": {
                     "type": "number"
                   },
                   "regularMarketChange": {
                     "type": "number"
-                  },
-                  "": {
-                    "type": "string"
                   }
                 },
                 "required": [
                   "symbol",
-                  "regularMarketPrice",
+                  "regularMarkletPrice",
                   "regularMarketChange"
                 ]
               }
